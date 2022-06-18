@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+html {
+  height: 100% !important;
+  /* 15px baslama , vw - boyutme faizi */
+  font-size:  calc(15px + 0.390625vw);
+  /* font-size: calc(16px + 1vw); */
+}
+
+body {
+  height: 100% !important;
+  scroll-behavior: smooth !important;
+}
+
+#root {
+  height: 100% !important;
+}
+
+.App {
+  text-align: center;
+  height: auto;
+}
+
+.lx-background {
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.lx-background-item {
+  border-right: 1px solid #f8f8f8;
+  transition: all ease 0.3s;
+  float: left;
+  position: relative;
+  width: 12.5%;
+  height: 100%;
+}
+
+.lx-background-item:nth-child(2n + 1) {
+  background: #fefefe;
+}
